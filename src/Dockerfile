@@ -6,5 +6,6 @@ RUN ln -snf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 # 빌드 아티팩트 복사
 COPY build/libs/*SNAPSHOT.jar likelion.jar
 
+
 # 엔트리포인트 설정
 ENTRYPOINT ["java","-jar","likelion.jar"]
